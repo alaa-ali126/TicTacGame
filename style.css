@@ -44,3 +44,14 @@
 .square:hover {
     background-color: #000;
 }
+
+.restart {
+  width:100%;
+  padding: 10px;
+  background-color: #c00060;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  left: 95%;
+  margin-top: 10px;
+}

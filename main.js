@@ -43,18 +43,25 @@ function winner() {
   if (array[3] == array[5] && array[5] == array[7] && array[5] != "") {
     end(3, 5, 7);
   } 
+  if (array[1] == array[5] && array[5] == array[9] && array[5] != "") {
+    end(1, 5, 9);
+  } 
 }
 
 function play(id) {
   let squares = document.getElementById(id);
   if (tund == "x" && squares.innerHTML == "") {
-    squares.innerHTML = "x";
+    squares.innerHTML = "X";
     tund = "o";
     title.innerHTML = "O";
   } else if (tund == "o" && squares.innerHTML == "") {
-    squares.innerHTML = "o";
+    squares.innerHTML = "O";
     tund = "x";
     title.innerHTML = "X";
   }
   winner();
+}
+
+function restart() {
+  location.reload()
 }
