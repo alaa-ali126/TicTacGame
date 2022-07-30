@@ -1,0 +1,46 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.game {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 5px;
+  align-items: center;
+}
+
+.title {
+  background-color: #bc58eb;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 2em;
+  grid-column: 1/4;
+}
+
+.title span {
+  color: #eeff00;
+  font-weight: 600;
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+  background-color: #bc58eb;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:hover {
+    background-color: #000;
+}
